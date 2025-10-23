@@ -1,0 +1,827 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C65D7761-FED6-4E51-B7CA-A74C6B547B87}|CouponShop.DAL\\CouponShop.DAL.csproj|c:\\users\\chani\\desktop\\proramming\\.net\\couponshop\\couponshop.dal\\repositories\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C65D7761-FED6-4E51-B7CA-A74C6B547B87}|CouponShop.DAL\\CouponShop.DAL.csproj|solutionrelative:couponshop.dal\\repositories\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{632A00C1-C234-4173-86CD-0E0E6B7FF58C}|CouponShop.BLL\\CouponShop.BLL.csproj|c:\\users\\chani\\desktop\\proramming\\.net\\couponshop\\couponshop.bll\\mapping\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{632A00C1-C234-4173-86CD-0E0E6B7FF58C}|CouponShop.BLL\\CouponShop.BLL.csproj|solutionrelative:couponshop.bll\\mapping\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEA05F8D-D279-4E39-B051-79EAA6E1ADCE}|CouponShop.DTO\\CouponShop.DTO.csproj|c:\\users\\chani\\desktop\\proramming\\.net\\couponshop\\couponshop.dto\\orderitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEA05F8D-D279-4E39-B051-79EAA6E1ADCE}|CouponShop.DTO\\CouponShop.DTO.csproj|solutionrelative:couponshop.dto\\orderitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB145B17-2180-40AB-877F-EF34B6C9AEEC}|CouponShop.API\\CouponShop.API.csproj|c:\\users\\chani\\desktop\\proramming\\.net\\couponshop\\couponshop.api\\mapping\\apimappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB145B17-2180-40AB-877F-EF34B6C9AEEC}|CouponShop.API\\CouponShop.API.csproj|solutionrelative:couponshop.api\\mapping\\apimappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB145B17-2180-40AB-877F-EF34B6C9AEEC}|CouponShop.API\\CouponShop.API.csproj|c:\\users\\chani\\desktop\\proramming\\.net\\couponshop\\couponshop.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB145B17-2180-40AB-877F-EF34B6C9AEEC}|CouponShop.API\\CouponShop.API.csproj|solutionrelative:couponshop.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEA05F8D-D279-4E39-B051-79EAA6E1ADCE}|CouponShop.DTO\\CouponShop.DTO.csproj|c:\\users\\chani\\desktop\\proramming\\.net\\couponshop\\couponshop.dto\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEA05F8D-D279-4E39-B051-79EAA6E1ADCE}|CouponShop.DTO\\CouponShop.DTO.csproj|solutionrelative:couponshop.dto\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEA05F8D-D279-4E39-B051-79EAA6E1ADCE}|CouponShop.DTO\\CouponShop.DTO.csproj|c:\\users\\chani\\desktop\\proramming\\.net\\couponshop\\couponshop.dto\\couponcodedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEA05F8D-D279-4E39-B051-79EAA6E1ADCE}|CouponShop.DTO\\CouponShop.DTO.csproj|solutionrelative:couponshop.dto\\couponcodedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB145B17-2180-40AB-877F-EF34B6C9AEEC}|CouponShop.API\\CouponShop.API.csproj|c:\\users\\chani\\desktop\\proramming\\.net\\couponshop\\couponshop.api\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB145B17-2180-40AB-877F-EF34B6C9AEEC}|CouponShop.API\\CouponShop.API.csproj|solutionrelative:couponshop.api\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{632A00C1-C234-4173-86CD-0E0E6B7FF58C}|CouponShop.BLL\\CouponShop.BLL.csproj|c:\\users\\chani\\desktop\\proramming\\.net\\couponshop\\couponshop.bll\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{632A00C1-C234-4173-86CD-0E0E6B7FF58C}|CouponShop.BLL\\CouponShop.BLL.csproj|solutionrelative:couponshop.bll\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB145B17-2180-40AB-877F-EF34B6C9AEEC}|CouponShop.API\\CouponShop.API.csproj|c:\\users\\chani\\desktop\\proramming\\.net\\couponshop\\couponshop.api\\controllers\\consumerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB145B17-2180-40AB-877F-EF34B6C9AEEC}|CouponShop.API\\CouponShop.API.csproj|solutionrelative:couponshop.api\\controllers\\consumerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEA05F8D-D279-4E39-B051-79EAA6E1ADCE}|CouponShop.DTO\\CouponShop.DTO.csproj|c:\\users\\chani\\desktop\\proramming\\.net\\couponshop\\couponshop.dto\\consumerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEA05F8D-D279-4E39-B051-79EAA6E1ADCE}|CouponShop.DTO\\CouponShop.DTO.csproj|solutionrelative:couponshop.dto\\consumerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C65D7761-FED6-4E51-B7CA-A74C6B547B87}|CouponShop.DAL\\CouponShop.DAL.csproj|c:\\users\\chani\\desktop\\proramming\\.net\\couponshop\\couponshop.dal\\entities\\consumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C65D7761-FED6-4E51-B7CA-A74C6B547B87}|CouponShop.DAL\\CouponShop.DAL.csproj|solutionrelative:couponshop.dal\\entities\\consumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB145B17-2180-40AB-877F-EF34B6C9AEEC}|CouponShop.API\\CouponShop.API.csproj|c:\\users\\chani\\desktop\\proramming\\.net\\couponshop\\couponshop.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB145B17-2180-40AB-877F-EF34B6C9AEEC}|CouponShop.API\\CouponShop.API.csproj|solutionrelative:couponshop.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB145B17-2180-40AB-877F-EF34B6C9AEEC}|CouponShop.API\\CouponShop.API.csproj|c:\\users\\chani\\desktop\\proramming\\.net\\couponshop\\couponshop.api\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB145B17-2180-40AB-877F-EF34B6C9AEEC}|CouponShop.API\\CouponShop.API.csproj|solutionrelative:couponshop.api\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB145B17-2180-40AB-877F-EF34B6C9AEEC}|CouponShop.API\\CouponShop.API.csproj|c:\\users\\chani\\desktop\\proramming\\.net\\couponshop\\couponshop.api\\controllers\\couponrequestscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB145B17-2180-40AB-877F-EF34B6C9AEEC}|CouponShop.API\\CouponShop.API.csproj|solutionrelative:couponshop.api\\controllers\\couponrequestscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB145B17-2180-40AB-877F-EF34B6C9AEEC}|CouponShop.API\\CouponShop.API.csproj|c:\\users\\chani\\desktop\\proramming\\.net\\couponshop\\couponshop.api\\controllers\\businessescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB145B17-2180-40AB-877F-EF34B6C9AEEC}|CouponShop.API\\CouponShop.API.csproj|solutionrelative:couponshop.api\\controllers\\businessescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB145B17-2180-40AB-877F-EF34B6C9AEEC}|CouponShop.API\\CouponShop.API.csproj|c:\\users\\chani\\desktop\\proramming\\.net\\couponshop\\couponshop.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{BB145B17-2180-40AB-877F-EF34B6C9AEEC}|CouponShop.API\\CouponShop.API.csproj|solutionrelative:couponshop.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{632A00C1-C234-4173-86CD-0E0E6B7FF58C}|CouponShop.BLL\\CouponShop.BLL.csproj|c:\\users\\chani\\desktop\\proramming\\.net\\couponshop\\couponshop.bll\\services\\consumerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{632A00C1-C234-4173-86CD-0E0E6B7FF58C}|CouponShop.BLL\\CouponShop.BLL.csproj|solutionrelative:couponshop.bll\\services\\consumerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{632A00C1-C234-4173-86CD-0E0E6B7FF58C}|CouponShop.BLL\\CouponShop.BLL.csproj|c:\\users\\chani\\desktop\\proramming\\.net\\couponshop\\couponshop.bll\\interfaces\\iconsumerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{632A00C1-C234-4173-86CD-0E0E6B7FF58C}|CouponShop.BLL\\CouponShop.BLL.csproj|solutionrelative:couponshop.bll\\interfaces\\iconsumerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C65D7761-FED6-4E51-B7CA-A74C6B547B87}|CouponShop.DAL\\CouponShop.DAL.csproj|c:\\users\\chani\\desktop\\proramming\\.net\\couponshop\\couponshop.dal\\repositories\\consumerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C65D7761-FED6-4E51-B7CA-A74C6B547B87}|CouponShop.DAL\\CouponShop.DAL.csproj|solutionrelative:couponshop.dal\\repositories\\consumerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{632A00C1-C234-4173-86CD-0E0E6B7FF58C}|CouponShop.BLL\\CouponShop.BLL.csproj|c:\\users\\chani\\desktop\\proramming\\.net\\couponshop\\couponshop.bll\\services\\couponrequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{632A00C1-C234-4173-86CD-0E0E6B7FF58C}|CouponShop.BLL\\CouponShop.BLL.csproj|solutionrelative:couponshop.bll\\services\\couponrequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB145B17-2180-40AB-877F-EF34B6C9AEEC}|CouponShop.API\\CouponShop.API.csproj|c:\\users\\chani\\desktop\\proramming\\.net\\couponshop\\couponshop.api\\models\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB145B17-2180-40AB-877F-EF34B6C9AEEC}|CouponShop.API\\CouponShop.API.csproj|solutionrelative:couponshop.api\\models\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB145B17-2180-40AB-877F-EF34B6C9AEEC}|CouponShop.API\\CouponShop.API.csproj|c:\\users\\chani\\desktop\\proramming\\.net\\couponshop\\couponshop.api\\models\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB145B17-2180-40AB-877F-EF34B6C9AEEC}|CouponShop.API\\CouponShop.API.csproj|solutionrelative:couponshop.api\\models\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C65D7761-FED6-4E51-B7CA-A74C6B547B87}|CouponShop.DAL\\CouponShop.DAL.csproj|c:\\users\\chani\\desktop\\proramming\\.net\\couponshop\\couponshop.dal\\repositories\\couponrequestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C65D7761-FED6-4E51-B7CA-A74C6B547B87}|CouponShop.DAL\\CouponShop.DAL.csproj|solutionrelative:couponshop.dal\\repositories\\couponrequestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C65D7761-FED6-4E51-B7CA-A74C6B547B87}|CouponShop.DAL\\CouponShop.DAL.csproj|c:\\users\\chani\\desktop\\proramming\\.net\\couponshop\\couponshop.dal\\context\\couponshopcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C65D7761-FED6-4E51-B7CA-A74C6B547B87}|CouponShop.DAL\\CouponShop.DAL.csproj|solutionrelative:couponshop.dal\\context\\couponshopcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB145B17-2180-40AB-877F-EF34B6C9AEEC}|CouponShop.API\\CouponShop.API.csproj|c:\\users\\chani\\desktop\\proramming\\.net\\couponshop\\couponshop.api\\models\\addcouponrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB145B17-2180-40AB-877F-EF34B6C9AEEC}|CouponShop.API\\CouponShop.API.csproj|solutionrelative:couponshop.api\\models\\addcouponrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEA05F8D-D279-4E39-B051-79EAA6E1ADCE}|CouponShop.DTO\\CouponShop.DTO.csproj|c:\\users\\chani\\desktop\\proramming\\.net\\couponshop\\couponshop.dto\\couponrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEA05F8D-D279-4E39-B051-79EAA6E1ADCE}|CouponShop.DTO\\CouponShop.DTO.csproj|solutionrelative:couponshop.dto\\couponrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C65D7761-FED6-4E51-B7CA-A74C6B547B87}|CouponShop.DAL\\CouponShop.DAL.csproj|c:\\users\\chani\\desktop\\proramming\\.net\\couponshop\\couponshop.dal\\entities\\couponrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C65D7761-FED6-4E51-B7CA-A74C6B547B87}|CouponShop.DAL\\CouponShop.DAL.csproj|solutionrelative:couponshop.dal\\entities\\couponrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C65D7761-FED6-4E51-B7CA-A74C6B547B87}|CouponShop.DAL\\CouponShop.DAL.csproj|c:\\users\\chani\\desktop\\proramming\\.net\\couponshop\\couponshop.dal\\interfaces\\icouponrequestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C65D7761-FED6-4E51-B7CA-A74C6B547B87}|CouponShop.DAL\\CouponShop.DAL.csproj|solutionrelative:couponshop.dal\\interfaces\\icouponrequestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{632A00C1-C234-4173-86CD-0E0E6B7FF58C}|CouponShop.BLL\\CouponShop.BLL.csproj|c:\\users\\chani\\desktop\\proramming\\.net\\couponshop\\couponshop.bll\\interfaces\\icouponrequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{632A00C1-C234-4173-86CD-0E0E6B7FF58C}|CouponShop.BLL\\CouponShop.BLL.csproj|solutionrelative:couponshop.bll\\interfaces\\icouponrequestservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{632A00C1-C234-4173-86CD-0E0E6B7FF58C}|CouponShop.BLL\\CouponShop.BLL.csproj|c:\\users\\chani\\desktop\\proramming\\.net\\couponshop\\couponshop.bll\\services\\businessservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{632A00C1-C234-4173-86CD-0E0E6B7FF58C}|CouponShop.BLL\\CouponShop.BLL.csproj|solutionrelative:couponshop.bll\\services\\businessservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C65D7761-FED6-4E51-B7CA-A74C6B547B87}|CouponShop.DAL\\CouponShop.DAL.csproj|c:\\users\\chani\\desktop\\proramming\\.net\\couponshop\\couponshop.dal\\repositories\\businessrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C65D7761-FED6-4E51-B7CA-A74C6B547B87}|CouponShop.DAL\\CouponShop.DAL.csproj|solutionrelative:couponshop.dal\\repositories\\businessrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C65D7761-FED6-4E51-B7CA-A74C6B547B87}|CouponShop.DAL\\CouponShop.DAL.csproj|c:\\users\\chani\\desktop\\proramming\\.net\\couponshop\\couponshop.dal\\repositories\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C65D7761-FED6-4E51-B7CA-A74C6B547B87}|CouponShop.DAL\\CouponShop.DAL.csproj|solutionrelative:couponshop.dal\\repositories\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C65D7761-FED6-4E51-B7CA-A74C6B547B87}|CouponShop.DAL\\CouponShop.DAL.csproj|c:\\users\\chani\\desktop\\proramming\\.net\\couponshop\\couponshop.dal\\interfaces\\iorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C65D7761-FED6-4E51-B7CA-A74C6B547B87}|CouponShop.DAL\\CouponShop.DAL.csproj|solutionrelative:couponshop.dal\\interfaces\\iorderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{632A00C1-C234-4173-86CD-0E0E6B7FF58C}|CouponShop.BLL\\CouponShop.BLL.csproj|c:\\users\\chani\\desktop\\proramming\\.net\\couponshop\\couponshop.bll\\interfaces\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{632A00C1-C234-4173-86CD-0E0E6B7FF58C}|CouponShop.BLL\\CouponShop.BLL.csproj|solutionrelative:couponshop.bll\\interfaces\\iorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{632A00C1-C234-4173-86CD-0E0E6B7FF58C}|CouponShop.BLL\\CouponShop.BLL.csproj|c:\\users\\chani\\desktop\\proramming\\.net\\couponshop\\couponshop.bll\\services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{632A00C1-C234-4173-86CD-0E0E6B7FF58C}|CouponShop.BLL\\CouponShop.BLL.csproj|solutionrelative:couponshop.bll\\services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{632A00C1-C234-4173-86CD-0E0E6B7FF58C}|CouponShop.BLL\\CouponShop.BLL.csproj|c:\\users\\chani\\desktop\\proramming\\.net\\couponshop\\couponshop.bll\\interfaces\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{632A00C1-C234-4173-86CD-0E0E6B7FF58C}|CouponShop.BLL\\CouponShop.BLL.csproj|solutionrelative:couponshop.bll\\interfaces\\iproductservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{632A00C1-C234-4173-86CD-0E0E6B7FF58C}|CouponShop.BLL\\CouponShop.BLL.csproj|c:\\users\\chani\\desktop\\proramming\\.net\\couponshop\\couponshop.bll\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{632A00C1-C234-4173-86CD-0E0E6B7FF58C}|CouponShop.BLL\\CouponShop.BLL.csproj|solutionrelative:couponshop.bll\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB145B17-2180-40AB-877F-EF34B6C9AEEC}|CouponShop.API\\CouponShop.API.csproj|c:\\users\\chani\\desktop\\proramming\\.net\\couponshop\\couponshop.api\\models\\orderrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB145B17-2180-40AB-877F-EF34B6C9AEEC}|CouponShop.API\\CouponShop.API.csproj|solutionrelative:couponshop.api\\models\\orderrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB145B17-2180-40AB-877F-EF34B6C9AEEC}|CouponShop.API\\CouponShop.API.csproj|c:\\users\\chani\\desktop\\proramming\\.net\\couponshop\\couponshop.api\\models\\orderitemrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB145B17-2180-40AB-877F-EF34B6C9AEEC}|CouponShop.API\\CouponShop.API.csproj|solutionrelative:couponshop.api\\models\\orderitemrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C65D7761-FED6-4E51-B7CA-A74C6B547B87}|CouponShop.DAL\\CouponShop.DAL.csproj|c:\\users\\chani\\desktop\\proramming\\.net\\couponshop\\couponshop.dal\\interfaces\\iconsumerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C65D7761-FED6-4E51-B7CA-A74C6B547B87}|CouponShop.DAL\\CouponShop.DAL.csproj|solutionrelative:couponshop.dal\\interfaces\\iconsumerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB145B17-2180-40AB-877F-EF34B6C9AEEC}|CouponShop.API\\CouponShop.API.csproj|c:\\users\\chani\\desktop\\proramming\\.net\\couponshop\\couponshop.api\\models\\consumerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB145B17-2180-40AB-877F-EF34B6C9AEEC}|CouponShop.API\\CouponShop.API.csproj|solutionrelative:couponshop.api\\models\\consumerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C65D7761-FED6-4E51-B7CA-A74C6B547B87}|CouponShop.DAL\\CouponShop.DAL.csproj|c:\\users\\chani\\desktop\\proramming\\.net\\couponshop\\couponshop.dal\\interfaces\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C65D7761-FED6-4E51-B7CA-A74C6B547B87}|CouponShop.DAL\\CouponShop.DAL.csproj|solutionrelative:couponshop.dal\\interfaces\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{632A00C1-C234-4173-86CD-0E0E6B7FF58C}|CouponShop.BLL\\CouponShop.BLL.csproj|c:\\users\\chani\\desktop\\proramming\\.net\\couponshop\\couponshop.bll\\interfaces\\icategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{632A00C1-C234-4173-86CD-0E0E6B7FF58C}|CouponShop.BLL\\CouponShop.BLL.csproj|solutionrelative:couponshop.bll\\interfaces\\icategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB145B17-2180-40AB-877F-EF34B6C9AEEC}|CouponShop.API\\CouponShop.API.csproj|c:\\users\\chani\\desktop\\proramming\\.net\\couponshop\\couponshop.api\\models\\categoryrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB145B17-2180-40AB-877F-EF34B6C9AEEC}|CouponShop.API\\CouponShop.API.csproj|solutionrelative:couponshop.api\\models\\categoryrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEA05F8D-D279-4E39-B051-79EAA6E1ADCE}|CouponShop.DTO\\CouponShop.DTO.csproj|c:\\users\\chani\\desktop\\proramming\\.net\\couponshop\\couponshop.dto\\categorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEA05F8D-D279-4E39-B051-79EAA6E1ADCE}|CouponShop.DTO\\CouponShop.DTO.csproj|solutionrelative:couponshop.dto\\categorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C65D7761-FED6-4E51-B7CA-A74C6B547B87}|CouponShop.DAL\\CouponShop.DAL.csproj|c:\\users\\chani\\desktop\\proramming\\.net\\couponshop\\couponshop.dal\\interfaces\\ibusinessrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C65D7761-FED6-4E51-B7CA-A74C6B547B87}|CouponShop.DAL\\CouponShop.DAL.csproj|solutionrelative:couponshop.dal\\interfaces\\ibusinessrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB145B17-2180-40AB-877F-EF34B6C9AEEC}|CouponShop.API\\CouponShop.API.csproj|c:\\users\\chani\\desktop\\proramming\\.net\\couponshop\\couponshop.api\\models\\changepasswordrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB145B17-2180-40AB-877F-EF34B6C9AEEC}|CouponShop.API\\CouponShop.API.csproj|solutionrelative:couponshop.api\\models\\changepasswordrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB145B17-2180-40AB-877F-EF34B6C9AEEC}|CouponShop.API\\CouponShop.API.csproj|c:\\users\\chani\\desktop\\proramming\\.net\\couponshop\\couponshop.api\\models\\updateconsumerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB145B17-2180-40AB-877F-EF34B6C9AEEC}|CouponShop.API\\CouponShop.API.csproj|solutionrelative:couponshop.api\\models\\updateconsumerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{632A00C1-C234-4173-86CD-0E0E6B7FF58C}|CouponShop.BLL\\CouponShop.BLL.csproj|c:\\users\\chani\\desktop\\proramming\\.net\\couponshop\\couponshop.bll\\interfaces\\ibusinessservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{632A00C1-C234-4173-86CD-0E0E6B7FF58C}|CouponShop.BLL\\CouponShop.BLL.csproj|solutionrelative:couponshop.bll\\interfaces\\ibusinessservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.API\\Program.cs",
+              "RelativeDocumentMoniker": "CouponShop.API\\Program.cs",
+              "ToolTip": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.API\\Program.cs",
+              "RelativeToolTip": "CouponShop.API\\Program.cs",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAAAHYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T17:53:34.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OrderDto.cs",
+              "DocumentMoniker": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.DTO\\OrderDto.cs",
+              "RelativeDocumentMoniker": "CouponShop.DTO\\OrderDto.cs",
+              "ToolTip": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.DTO\\OrderDto.cs",
+              "RelativeToolTip": "CouponShop.DTO\\OrderDto.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAAA8AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-31T09:03:25.601Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CouponCodeDto.cs",
+              "DocumentMoniker": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.DTO\\CouponCodeDto.cs",
+              "RelativeDocumentMoniker": "CouponShop.DTO\\CouponCodeDto.cs",
+              "ToolTip": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.DTO\\CouponCodeDto.cs",
+              "RelativeToolTip": "CouponShop.DTO\\CouponCodeDto.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T19:52:56.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.API\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "CouponShop.API\\Controllers\\OrdersController.cs",
+              "ToolTip": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.API\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "CouponShop.API\\Controllers\\OrdersController.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAgwEIAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T18:49:48.486Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MappingProfile.cs",
+              "DocumentMoniker": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.BLL\\Mapping\\MappingProfile.cs",
+              "RelativeDocumentMoniker": "CouponShop.BLL\\Mapping\\MappingProfile.cs",
+              "ToolTip": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.BLL\\Mapping\\MappingProfile.cs",
+              "RelativeToolTip": "CouponShop.BLL\\Mapping\\MappingProfile.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAuwB0AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T17:58:34.887Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OrderItemDto.cs",
+              "DocumentMoniker": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.DTO\\OrderItemDto.cs",
+              "RelativeDocumentMoniker": "CouponShop.DTO\\OrderItemDto.cs",
+              "ToolTip": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.DTO\\OrderItemDto.cs",
+              "RelativeToolTip": "CouponShop.DTO\\OrderItemDto.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAABAAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T07:10:15.833Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OrderRepository.cs",
+              "DocumentMoniker": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.DAL\\Repositories\\OrderRepository.cs",
+              "RelativeDocumentMoniker": "CouponShop.DAL\\Repositories\\OrderRepository.cs",
+              "ToolTip": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.DAL\\Repositories\\OrderRepository.cs",
+              "RelativeToolTip": "CouponShop.DAL\\Repositories\\OrderRepository.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAYwEQAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T18:48:07.001Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.BLL\\Services\\OrderService.cs",
+              "RelativeDocumentMoniker": "CouponShop.BLL\\Services\\OrderService.cs",
+              "ToolTip": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.BLL\\Services\\OrderService.cs",
+              "RelativeToolTip": "CouponShop.BLL\\Services\\OrderService.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAAAEcAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T18:49:10.989Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ApiMappingProfile.cs",
+              "DocumentMoniker": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.API\\Mapping\\ApiMappingProfile.cs",
+              "RelativeDocumentMoniker": "CouponShop.API\\Mapping\\ApiMappingProfile.cs",
+              "ToolTip": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.API\\Mapping\\ApiMappingProfile.cs",
+              "RelativeToolTip": "CouponShop.API\\Mapping\\ApiMappingProfile.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-17T18:49:05.896Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CouponRequestsController.cs",
+              "DocumentMoniker": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.API\\Controllers\\CouponRequestsController.cs",
+              "RelativeDocumentMoniker": "CouponShop.API\\Controllers\\CouponRequestsController.cs",
+              "ToolTip": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.API\\Controllers\\CouponRequestsController.cs",
+              "RelativeToolTip": "CouponShop.API\\Controllers\\CouponRequestsController.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAgwC4AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-27T18:33:21.93Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ConsumersController.cs",
+              "DocumentMoniker": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.API\\Controllers\\ConsumersController.cs",
+              "RelativeDocumentMoniker": "CouponShop.API\\Controllers\\ConsumersController.cs",
+              "ToolTip": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.API\\Controllers\\ConsumersController.cs",
+              "RelativeToolTip": "CouponShop.API\\Controllers\\ConsumersController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwDUAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T09:19:33.743Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "BusinessesController.cs",
+              "DocumentMoniker": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.API\\Controllers\\BusinessesController.cs",
+              "RelativeDocumentMoniker": "CouponShop.API\\Controllers\\BusinessesController.cs",
+              "ToolTip": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.API\\Controllers\\BusinessesController.cs",
+              "RelativeToolTip": "CouponShop.API\\Controllers\\BusinessesController.cs",
+              "ViewState": "AgIAAD0AAAAAnCk8IDoDwFIAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-16T13:53:54.359Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CategoriesController.cs",
+              "DocumentMoniker": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.API\\Controllers\\CategoriesController.cs",
+              "RelativeDocumentMoniker": "CouponShop.API\\Controllers\\CategoriesController.cs",
+              "ToolTip": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.API\\Controllers\\CategoriesController.cs",
+              "RelativeToolTip": "CouponShop.API\\Controllers\\CategoriesController.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAgwCkAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T13:13:12.503Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.API\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "CouponShop.API\\Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.API\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "CouponShop.API\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAAE4AAACAp10T9/QtwFoAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-27T10:25:32.722Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ConsumerDto.cs",
+              "DocumentMoniker": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.DTO\\ConsumerDto.cs",
+              "RelativeDocumentMoniker": "CouponShop.DTO\\ConsumerDto.cs",
+              "ToolTip": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.DTO\\ConsumerDto.cs",
+              "RelativeToolTip": "CouponShop.DTO\\ConsumerDto.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T09:27:00.812Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Consumer.cs",
+              "DocumentMoniker": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.DAL\\Entities\\Consumer.cs",
+              "RelativeDocumentMoniker": "CouponShop.DAL\\Entities\\Consumer.cs",
+              "ToolTip": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.DAL\\Entities\\Consumer.cs",
+              "RelativeToolTip": "CouponShop.DAL\\Entities\\Consumer.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAA3wBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-28T08:42:27.58Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.API\\appsettings.json",
+              "RelativeDocumentMoniker": "CouponShop.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.API\\appsettings.json",
+              "RelativeToolTip": "CouponShop.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-21T07:29:30.968Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ConsumerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.DAL\\Repositories\\ConsumerRepository.cs",
+              "RelativeDocumentMoniker": "CouponShop.DAL\\Repositories\\ConsumerRepository.cs",
+              "ToolTip": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.DAL\\Repositories\\ConsumerRepository.cs",
+              "RelativeToolTip": "CouponShop.DAL\\Repositories\\ConsumerRepository.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAgwDAAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T09:16:42.599Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ConsumerService.cs",
+              "DocumentMoniker": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.BLL\\Services\\ConsumerService.cs",
+              "RelativeDocumentMoniker": "CouponShop.BLL\\Services\\ConsumerService.cs",
+              "ToolTip": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.BLL\\Services\\ConsumerService.cs",
+              "RelativeToolTip": "CouponShop.BLL\\Services\\ConsumerService.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAYwDIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T09:17:56.796Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "CouponRequestService.cs",
+              "DocumentMoniker": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.BLL\\Services\\CouponRequestService.cs",
+              "RelativeDocumentMoniker": "CouponShop.BLL\\Services\\CouponRequestService.cs",
+              "ToolTip": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.BLL\\Services\\CouponRequestService.cs",
+              "RelativeToolTip": "CouponShop.BLL\\Services\\CouponRequestService.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAADwv0IAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-27T18:32:31.822Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IConsumerService.cs",
+              "DocumentMoniker": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.BLL\\Interfaces\\IConsumerService.cs",
+              "RelativeDocumentMoniker": "CouponShop.BLL\\Interfaces\\IConsumerService.cs",
+              "ToolTip": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.BLL\\Interfaces\\IConsumerService.cs",
+              "RelativeToolTip": "CouponShop.BLL\\Interfaces\\IConsumerService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T09:18:27.146Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "LoginResponse.cs",
+              "DocumentMoniker": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.API\\Models\\LoginResponse.cs",
+              "RelativeDocumentMoniker": "CouponShop.API\\Models\\LoginResponse.cs",
+              "ToolTip": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.API\\Models\\LoginResponse.cs",
+              "RelativeToolTip": "CouponShop.API\\Models\\LoginResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T19:22:10.992Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "LoginRequest.cs",
+              "DocumentMoniker": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.API\\Models\\LoginRequest.cs",
+              "RelativeDocumentMoniker": "CouponShop.API\\Models\\LoginRequest.cs",
+              "ToolTip": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.API\\Models\\LoginRequest.cs",
+              "RelativeToolTip": "CouponShop.API\\Models\\LoginRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T10:45:25.418Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "CouponRequestRepository.cs",
+              "DocumentMoniker": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.DAL\\Repositories\\CouponRequestRepository.cs",
+              "RelativeDocumentMoniker": "CouponShop.DAL\\Repositories\\CouponRequestRepository.cs",
+              "ToolTip": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.DAL\\Repositories\\CouponRequestRepository.cs",
+              "RelativeToolTip": "CouponShop.DAL\\Repositories\\CouponRequestRepository.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAADwv18AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-27T18:30:37.898Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "CouponShopContext.cs",
+              "DocumentMoniker": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.DAL\\Context\\CouponShopContext.cs",
+              "RelativeDocumentMoniker": "CouponShop.DAL\\Context\\CouponShopContext.cs",
+              "ToolTip": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.DAL\\Context\\CouponShopContext.cs",
+              "RelativeToolTip": "CouponShop.DAL\\Context\\CouponShopContext.cs",
+              "ViewState": "AgIAAKEAAAAAAAAAAAAUwK4AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-27T18:21:14.417Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "AddCouponRequest.cs",
+              "DocumentMoniker": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.API\\Models\\AddCouponRequest.cs",
+              "RelativeDocumentMoniker": "CouponShop.API\\Models\\AddCouponRequest.cs",
+              "ToolTip": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.API\\Models\\AddCouponRequest.cs",
+              "RelativeToolTip": "CouponShop.API\\Models\\AddCouponRequest.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-27T19:13:49.705Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "CouponRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.DTO\\CouponRequestDto.cs",
+              "RelativeDocumentMoniker": "CouponShop.DTO\\CouponRequestDto.cs",
+              "ToolTip": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.DTO\\CouponRequestDto.cs",
+              "RelativeToolTip": "CouponShop.DTO\\CouponRequestDto.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAzwBYAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-27T18:35:28.104Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "CouponRequest.cs",
+              "DocumentMoniker": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.DAL\\Entities\\CouponRequest.cs",
+              "RelativeDocumentMoniker": "CouponShop.DAL\\Entities\\CouponRequest.cs",
+              "ToolTip": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.DAL\\Entities\\CouponRequest.cs",
+              "RelativeToolTip": "CouponShop.DAL\\Entities\\CouponRequest.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAA9wB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-28T08:01:02.954Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ICouponRequestService.cs",
+              "DocumentMoniker": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.BLL\\Interfaces\\ICouponRequestService.cs",
+              "RelativeDocumentMoniker": "CouponShop.BLL\\Interfaces\\ICouponRequestService.cs",
+              "ToolTip": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.BLL\\Interfaces\\ICouponRequestService.cs",
+              "RelativeToolTip": "CouponShop.BLL\\Interfaces\\ICouponRequestService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-27T18:31:53.145Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ICouponRequestRepository.cs",
+              "DocumentMoniker": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.DAL\\Interfaces\\ICouponRequestRepository.cs",
+              "RelativeDocumentMoniker": "CouponShop.DAL\\Interfaces\\ICouponRequestRepository.cs",
+              "ToolTip": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.DAL\\Interfaces\\ICouponRequestRepository.cs",
+              "RelativeToolTip": "CouponShop.DAL\\Interfaces\\ICouponRequestRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-27T18:30:59.429Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "BusinessService.cs",
+              "DocumentMoniker": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.BLL\\Services\\BusinessService.cs",
+              "RelativeDocumentMoniker": "CouponShop.BLL\\Services\\BusinessService.cs",
+              "ToolTip": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.BLL\\Services\\BusinessService.cs",
+              "RelativeToolTip": "CouponShop.BLL\\Services\\BusinessService.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAgwDcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-16T11:40:54.314Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "BusinessRepository.cs",
+              "DocumentMoniker": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.DAL\\Repositories\\BusinessRepository.cs",
+              "RelativeDocumentMoniker": "CouponShop.DAL\\Repositories\\BusinessRepository.cs",
+              "ToolTip": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.DAL\\Repositories\\BusinessRepository.cs",
+              "RelativeToolTip": "CouponShop.DAL\\Repositories\\BusinessRepository.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAYwCEAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-16T11:33:44.051Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "CategoryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.DAL\\Repositories\\CategoryRepository.cs",
+              "RelativeDocumentMoniker": "CouponShop.DAL\\Repositories\\CategoryRepository.cs",
+              "ToolTip": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.DAL\\Repositories\\CategoryRepository.cs",
+              "RelativeToolTip": "CouponShop.DAL\\Repositories\\CategoryRepository.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAYwDIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T12:37:15.3Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "IOrderRepository.cs",
+              "DocumentMoniker": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.DAL\\Interfaces\\IOrderRepository.cs",
+              "RelativeDocumentMoniker": "CouponShop.DAL\\Interfaces\\IOrderRepository.cs",
+              "ToolTip": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.DAL\\Interfaces\\IOrderRepository.cs",
+              "RelativeToolTip": "CouponShop.DAL\\Interfaces\\IOrderRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T18:47:38.737Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "IOrderService.cs",
+              "DocumentMoniker": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.BLL\\Interfaces\\IOrderService.cs",
+              "RelativeDocumentMoniker": "CouponShop.BLL\\Interfaces\\IOrderService.cs",
+              "ToolTip": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.BLL\\Interfaces\\IOrderService.cs",
+              "RelativeToolTip": "CouponShop.BLL\\Interfaces\\IOrderService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T18:48:48.07Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "CategoryService.cs",
+              "DocumentMoniker": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.BLL\\Services\\CategoryService.cs",
+              "RelativeDocumentMoniker": "CouponShop.BLL\\Services\\CategoryService.cs",
+              "ToolTip": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.BLL\\Services\\CategoryService.cs",
+              "RelativeToolTip": "CouponShop.BLL\\Services\\CategoryService.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAgwD8AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T12:45:46.6Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "IProductService.cs",
+              "DocumentMoniker": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.BLL\\Interfaces\\IProductService.cs",
+              "RelativeDocumentMoniker": "CouponShop.BLL\\Interfaces\\IProductService.cs",
+              "ToolTip": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.BLL\\Interfaces\\IProductService.cs",
+              "RelativeToolTip": "CouponShop.BLL\\Interfaces\\IProductService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA0AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-24T13:25:14.417Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.BLL\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "CouponShop.BLL\\Services\\ProductService.cs",
+              "ToolTip": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.BLL\\Services\\ProductService.cs",
+              "RelativeToolTip": "CouponShop.BLL\\Services\\ProductService.cs",
+              "ViewState": "AgIAAFIAAAAAgu0PvlYQwC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-24T13:24:39.343Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "OrderRequest.cs",
+              "DocumentMoniker": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.API\\Models\\OrderRequest.cs",
+              "RelativeDocumentMoniker": "CouponShop.API\\Models\\OrderRequest.cs",
+              "ToolTip": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.API\\Models\\OrderRequest.cs",
+              "RelativeToolTip": "CouponShop.API\\Models\\OrderRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T07:12:27.104Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "OrderItemRequest.cs",
+              "DocumentMoniker": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.API\\Models\\OrderItemRequest.cs",
+              "RelativeDocumentMoniker": "CouponShop.API\\Models\\OrderItemRequest.cs",
+              "ToolTip": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.API\\Models\\OrderItemRequest.cs",
+              "RelativeToolTip": "CouponShop.API\\Models\\OrderItemRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T07:12:06.623Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "IConsumerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.DAL\\Interfaces\\IConsumerRepository.cs",
+              "RelativeDocumentMoniker": "CouponShop.DAL\\Interfaces\\IConsumerRepository.cs",
+              "ToolTip": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.DAL\\Interfaces\\IConsumerRepository.cs",
+              "RelativeToolTip": "CouponShop.DAL\\Interfaces\\IConsumerRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T09:17:15.464Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "ConsumerRequest.cs",
+              "DocumentMoniker": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.API\\Models\\ConsumerRequest.cs",
+              "RelativeDocumentMoniker": "CouponShop.API\\Models\\ConsumerRequest.cs",
+              "ToolTip": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.API\\Models\\ConsumerRequest.cs",
+              "RelativeToolTip": "CouponShop.API\\Models\\ConsumerRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T09:15:12.602Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "ICategoryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.DAL\\Interfaces\\ICategoryRepository.cs",
+              "RelativeDocumentMoniker": "CouponShop.DAL\\Interfaces\\ICategoryRepository.cs",
+              "ToolTip": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.DAL\\Interfaces\\ICategoryRepository.cs",
+              "RelativeToolTip": "CouponShop.DAL\\Interfaces\\ICategoryRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T12:37:42.747Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "ICategoryService.cs",
+              "DocumentMoniker": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.BLL\\Interfaces\\ICategoryService.cs",
+              "RelativeDocumentMoniker": "CouponShop.BLL\\Interfaces\\ICategoryService.cs",
+              "ToolTip": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.BLL\\Interfaces\\ICategoryService.cs",
+              "RelativeToolTip": "CouponShop.BLL\\Interfaces\\ICategoryService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T12:44:58.717Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "CategoryRequest.cs",
+              "DocumentMoniker": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.API\\Models\\CategoryRequest.cs",
+              "RelativeDocumentMoniker": "CouponShop.API\\Models\\CategoryRequest.cs",
+              "ToolTip": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.API\\Models\\CategoryRequest.cs",
+              "RelativeToolTip": "CouponShop.API\\Models\\CategoryRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T17:57:13.211Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "CategoryDto.cs",
+              "DocumentMoniker": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.DTO\\CategoryDto.cs",
+              "RelativeDocumentMoniker": "CouponShop.DTO\\CategoryDto.cs",
+              "ToolTip": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.DTO\\CategoryDto.cs",
+              "RelativeToolTip": "CouponShop.DTO\\CategoryDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T12:47:41.952Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "UpdateConsumerRequest.cs",
+              "DocumentMoniker": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.API\\Models\\UpdateConsumerRequest.cs",
+              "RelativeDocumentMoniker": "CouponShop.API\\Models\\UpdateConsumerRequest.cs",
+              "ToolTip": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.API\\Models\\UpdateConsumerRequest.cs",
+              "RelativeToolTip": "CouponShop.API\\Models\\UpdateConsumerRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T11:05:34.078Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "ChangePasswordRequest.cs",
+              "DocumentMoniker": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.API\\Models\\ChangePasswordRequest.cs",
+              "RelativeDocumentMoniker": "CouponShop.API\\Models\\ChangePasswordRequest.cs",
+              "ToolTip": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.API\\Models\\ChangePasswordRequest.cs",
+              "RelativeToolTip": "CouponShop.API\\Models\\ChangePasswordRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T11:09:01.811Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "IBusinessService.cs",
+              "DocumentMoniker": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.BLL\\Interfaces\\IBusinessService.cs",
+              "RelativeDocumentMoniker": "CouponShop.BLL\\Interfaces\\IBusinessService.cs",
+              "ToolTip": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.BLL\\Interfaces\\IBusinessService.cs",
+              "RelativeToolTip": "CouponShop.BLL\\Interfaces\\IBusinessService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-16T11:42:59.268Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "IBusinessRepository.cs",
+              "DocumentMoniker": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.DAL\\Interfaces\\IBusinessRepository.cs",
+              "RelativeDocumentMoniker": "CouponShop.DAL\\Interfaces\\IBusinessRepository.cs",
+              "ToolTip": "C:\\Users\\chani\\Desktop\\proramming\\.NET\\CouponShop\\CouponShop.DAL\\Interfaces\\IBusinessRepository.cs",
+              "RelativeToolTip": "CouponShop.DAL\\Interfaces\\IBusinessRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-16T11:34:15.294Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

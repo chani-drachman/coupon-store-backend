@@ -1,0 +1,14 @@
+C:\Users\chani\Desktop\proramming\.NET\CouponShop\CouponShop.DAL\bin\Debug\net9.0\CouponShop.DAL.deps.json
+C:\Users\chani\Desktop\proramming\.NET\CouponShop\CouponShop.DAL\bin\Debug\net9.0\CouponShop.DAL.runtimeconfig.json
+C:\Users\chani\Desktop\proramming\.NET\CouponShop\CouponShop.DAL\bin\Debug\net9.0\CouponShop.DAL.dll
+C:\Users\chani\Desktop\proramming\.NET\CouponShop\CouponShop.DAL\bin\Debug\net9.0\CouponShop.DAL.pdb
+C:\Users\chani\Desktop\proramming\.NET\CouponShop\CouponShop.DAL\obj\Debug\net9.0\CouponShop.DAL.csproj.AssemblyReference.cache
+C:\Users\chani\Desktop\proramming\.NET\CouponShop\CouponShop.DAL\obj\Debug\net9.0\CouponShop.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chani\Desktop\proramming\.NET\CouponShop\CouponShop.DAL\obj\Debug\net9.0\CouponShop.DAL.AssemblyInfoInputs.cache
+C:\Users\chani\Desktop\proramming\.NET\CouponShop\CouponShop.DAL\obj\Debug\net9.0\CouponShop.DAL.AssemblyInfo.cs
+C:\Users\chani\Desktop\proramming\.NET\CouponShop\CouponShop.DAL\obj\Debug\net9.0\CouponShop.DAL.csproj.CoreCompileInputs.cache
+C:\Users\chani\Desktop\proramming\.NET\CouponShop\CouponShop.DAL\obj\Debug\net9.0\CouponShop.DAL.dll
+C:\Users\chani\Desktop\proramming\.NET\CouponShop\CouponShop.DAL\obj\Debug\net9.0\refint\CouponShop.DAL.dll
+C:\Users\chani\Desktop\proramming\.NET\CouponShop\CouponShop.DAL\obj\Debug\net9.0\CouponShop.DAL.pdb
+C:\Users\chani\Desktop\proramming\.NET\CouponShop\CouponShop.DAL\obj\Debug\net9.0\CouponShop.DAL.genruntimeconfig.cache
+C:\Users\chani\Desktop\proramming\.NET\CouponShop\CouponShop.DAL\obj\Debug\net9.0\ref\CouponShop.DAL.dll

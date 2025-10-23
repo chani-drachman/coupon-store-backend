@@ -1,0 +1,17 @@
+C:\Users\chani\Desktop\proramming\.NET\CouponShop\CouponShop.BLL\bin\Debug\net9.0\CouponShop.BLL.deps.json
+C:\Users\chani\Desktop\proramming\.NET\CouponShop\CouponShop.BLL\bin\Debug\net9.0\CouponShop.BLL.dll
+C:\Users\chani\Desktop\proramming\.NET\CouponShop\CouponShop.BLL\bin\Debug\net9.0\CouponShop.BLL.pdb
+C:\Users\chani\Desktop\proramming\.NET\CouponShop\CouponShop.BLL\bin\Debug\net9.0\CouponShop.DAL.dll
+C:\Users\chani\Desktop\proramming\.NET\CouponShop\CouponShop.BLL\bin\Debug\net9.0\CouponShop.DAL.pdb
+C:\Users\chani\Desktop\proramming\.NET\CouponShop\CouponShop.BLL\obj\Debug\net9.0\CouponShop.BLL.csproj.AssemblyReference.cache
+C:\Users\chani\Desktop\proramming\.NET\CouponShop\CouponShop.BLL\obj\Debug\net9.0\CouponShop.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chani\Desktop\proramming\.NET\CouponShop\CouponShop.BLL\obj\Debug\net9.0\CouponShop.BLL.AssemblyInfoInputs.cache
+C:\Users\chani\Desktop\proramming\.NET\CouponShop\CouponShop.BLL\obj\Debug\net9.0\CouponShop.BLL.AssemblyInfo.cs
+C:\Users\chani\Desktop\proramming\.NET\CouponShop\CouponShop.BLL\obj\Debug\net9.0\CouponShop.BLL.csproj.CoreCompileInputs.cache
+C:\Users\chani\Desktop\proramming\.NET\CouponShop\CouponShop.BLL\obj\Debug\net9.0\CouponSh.BF70C220.Up2Date
+C:\Users\chani\Desktop\proramming\.NET\CouponShop\CouponShop.BLL\obj\Debug\net9.0\CouponShop.BLL.dll
+C:\Users\chani\Desktop\proramming\.NET\CouponShop\CouponShop.BLL\obj\Debug\net9.0\refint\CouponShop.BLL.dll
+C:\Users\chani\Desktop\proramming\.NET\CouponShop\CouponShop.BLL\obj\Debug\net9.0\CouponShop.BLL.pdb
+C:\Users\chani\Desktop\proramming\.NET\CouponShop\CouponShop.BLL\obj\Debug\net9.0\ref\CouponShop.BLL.dll
+C:\Users\chani\Desktop\proramming\.NET\CouponShop\CouponShop.BLL\bin\Debug\net9.0\CouponShop.DTO.dll
+C:\Users\chani\Desktop\proramming\.NET\CouponShop\CouponShop.BLL\bin\Debug\net9.0\CouponShop.DTO.pdb

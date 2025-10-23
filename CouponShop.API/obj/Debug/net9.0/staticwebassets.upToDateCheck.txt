@@ -1,0 +1,16 @@
+wwwroot\images\products\artmuseum.jpg
+wwwroot\images\products\bag.jpg
+wwwroot\images\products\bedroom.jpg
+wwwroot\images\products\cart.jpg
+wwwroot\images\products\computer.jpg
+wwwroot\images\products\galitfashion.jpg
+wwwroot\images\products\hotel.jpg
+wwwroot\images\products\jeans.jpg
+wwwroot\images\products\pasta.jpg
+wwwroot\images\products\pizza.jpg
+wwwroot\images\products\sale.jpg
+wwwroot\images\products\spa.jpg
+wwwroot\images\products\spa1.jpg
+wwwroot\images\products\spa2.jpg
+wwwroot\images\products\spa3.jpg
+wwwroot\images\products\suite.jpg
