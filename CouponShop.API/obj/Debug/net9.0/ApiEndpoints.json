@@ -190,7 +190,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "CouponShop.DTO.ConsumerDto",
+        "Type": "CouponShop.DTO.LoginResponse",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -228,21 +228,21 @@
   },
   {
     "ContainingType": "CouponShop.API.Controllers.ConsumersController",
-    "Method": "ConsumerLogin",
-    "RelativePath": "api/Consumers/login",
+    "Method": "CreatePassword",
+    "RelativePath": "api/Consumers/create-password",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "loginRequest",
-        "Type": "CouponShop.API.Models.LoginRequest",
+        "Name": "dto",
+        "Type": "CouponShop.DTO.CreatePasswordDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "CouponShop.DTO.ConsumerDto",
+        "Type": "CouponShop.DTO.LoginResponse",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -251,6 +251,64 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "CouponShop.API.Controllers.ConsumersController",
+    "Method": "Login",
+    "RelativePath": "api/Consumers/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "CouponShop.API.Models.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CouponShop.DTO.LoginResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CouponShop.API.Controllers.CouponCodeController",
+    "Method": "RedeemCoupon",
+    "RelativePath": "api/CouponCode/redeem-coupon/{couponId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "couponId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CouponShop.API.Controllers.CouponCodeController",
+    "Method": "VerifyCoupon",
+    "RelativePath": "api/CouponCode/verify-coupon",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "CouponShop.API.Models.VerifyCouponRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "CouponShop.API.Controllers.CouponRequestsController",
@@ -476,6 +534,22 @@
   },
   {
     "ContainingType": "CouponShop.API.Controllers.ProductsController",
+    "Method": "ToggleCouponActive",
+    "RelativePath": "api/Products/{id}/toggle-active",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CouponShop.API.Controllers.ProductsController",
     "Method": "UpdateCoupon",
     "RelativePath": "api/Products/{productId}",
     "HttpMethod": "PUT",
@@ -496,6 +570,26 @@
     "ReturnTypes": [
       {
         "Type": "CouponShop.DTO.ProductDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CouponShop.API.Controllers.ProductsController",
+    "Method": "GetActiveCoupons",
+    "RelativePath": "api/Products/active",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[CouponShop.DTO.ProductDto, CouponShop.DTO, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",

@@ -11,7 +11,7 @@ namespace CouponShop.BLL.Interfaces
     public interface ICouponRequestService
     {
         public Task<List<CouponRequestDto>> GetAllCouponRequests();
-        public Task<CouponRequestDto> AddCouponRequest(CouponRequestDto dto);
+        public Task<CouponRequestDto> AddCouponRequest(AddCouponRequestDto dto);
         public Task<ProductDto> ApproveCouponRequest(int requestId);
     }
 }

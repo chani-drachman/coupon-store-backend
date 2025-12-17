@@ -1,6 +1,8 @@
 ﻿using AutoMapper;
+using Azure.Core;
 using CouponShop.API.Models;
 using CouponShop.BLL.Interfaces;
+using CouponShop.BLL.Services;
 using CouponShop.DAL.Entities;
 using CouponShop.DTO;
 using Microsoft.AspNetCore.Http;
@@ -13,11 +15,13 @@ namespace CouponShop.API.Controllers
     public class BusinessesController : ControllerBase
     {
         private readonly IBusinessService _businessService;
+        private readonly IConsumerService _consumerService;
         private readonly IMapper _mapper;
 
-        public BusinessesController(IBusinessService businessService, IMapper mapper)
+        public BusinessesController(IBusinessService businessService, IMapper mapper, IConsumerService consumerService)
         {
           _businessService = businessService;
+            _consumerService = consumerService;
             _mapper = mapper;
         }
         //api/business
@@ -25,9 +29,22 @@ namespace CouponShop.API.Controllers
 
         public async Task<ActionResult<BusinessDto>> AddBusiness([FromBody] BusinessRequest businessDetails)
         {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
             try
             {
+                var consumerDto = new ConsumerDto
+                {
+                    Name = businessDetails.Name,
+                    Phone = businessDetails.Phone,
+                    Email = businessDetails.Email,
+                    Role = "Business"
+                };
+              
+
+                var addConsumerResponse =await _consumerService.AddConsumer(consumerDto);
                 var newBusiness = await _businessService.AddBusiness(_mapper.Map<BusinessDto>(businessDetails));
+
                 return Ok(newBusiness);
 
             }

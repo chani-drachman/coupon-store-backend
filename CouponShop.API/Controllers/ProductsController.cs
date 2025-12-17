@@ -2,6 +2,7 @@
 using CouponShop.API.Models;
 using CouponShop.BLL.Interfaces;
 using CouponShop.DTO;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -22,6 +23,7 @@ namespace CouponShop.API.Controllers
         }
         //api/product
         [HttpGet]
+        [Authorize(Roles = "Admin")]
         public async Task<ActionResult<List<ProductDto>>> GetAllProducts()
         {
             try
@@ -32,6 +34,21 @@ namespace CouponShop.API.Controllers
             { throw new Exception("An error occured while retrieving products", ex); }
         }
         //api/product/{id}
+
+        //api/product
+        [HttpGet("active")]
+        public async Task<ActionResult<List<ProductDto>>> GetActiveCoupons()
+        {
+            try
+            {
+                 var coupons= await _productService.GetActiveCoupons();
+                return Ok(coupons);
+            }
+            catch (Exception ex)
+            { return StatusCode(500, new { Message = ex.Message }); }
+
+
+        }
         [HttpGet("{id}")]
         public async Task<ActionResult<ProductDto>> GetProductById(int id)
         {
@@ -118,7 +135,21 @@ namespace CouponShop.API.Controllers
                 return StatusCode(500, new { Message = ex.Message });
             }
         }
+        [HttpPut("{id}/toggle-active")]
+        [Authorize(Roles = "Admin")]
+        public async Task<ActionResult> ToggleCouponActive(int id)
+        {
+            try
+            {
+               var coupon= await _productService.ToggleCouponActive(id);
+                return Ok(coupon);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { Message = ex.Message });
+            }
 
+        }
 
 
     }

@@ -28,6 +28,12 @@ public partial class CouponRequest
     public string? Status { get; set; }
 
     public DateTime? CreatedAt { get; set; }
-    public int? CategoryId { get; set; } 
-    public virtual Category? Category { get; set; }
+
+    public int CategoryId { get; set; }
+
+    public string? PrivateName { get; set; }
+
+    public string? BusinessAddress { get; set; }
+
+    public virtual Category Category { get; set; } = null!;
 }

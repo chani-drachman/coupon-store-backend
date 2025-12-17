@@ -1,14 +1,18 @@
 ﻿using AutoMapper;
+using CouponShop.BLL.Helpers;
 using CouponShop.BLL.Interfaces;
 using CouponShop.DAL.Entities;
 using CouponShop.DAL.Interfaces;
+using CouponShop.DAL.Repositories;
 using CouponShop.DTO;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Security.Claims;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -19,42 +23,56 @@ namespace CouponShop.BLL.Services
     {
 
         private readonly IConsumerRepository _consumerRepository;
+        private readonly IBusinessRepository _businessRepository;
+        private readonly IPasswordHelper _passwordHelper;
         private readonly IMapper _mapper;
 
-        public ConsumerService(IConsumerRepository consumerRepository, IMapper mapper)
+        public ConsumerService(IConsumerRepository consumerRepository,IBusinessRepository businessRepository,
+            IPasswordHelper passwordHelper, IMapper mapper)
         {
             _consumerRepository = consumerRepository;
+            _businessRepository = businessRepository;
+            _passwordHelper = passwordHelper;
             _mapper = mapper;
         }
-        public async Task<ConsumerDto> AddConsumer(ConsumerDto consumerDetails){
+        public async Task<LoginResponse> AddConsumer(ConsumerDto consumerDetails){
 
             var existing = await _consumerRepository.GetConsumerByEmail(consumerDetails.Email!);
             if (existing != null)
                 throw new Exception("A consumer with this email already exists.");
 
            var consumerEntity = _mapper.Map<Consumer>(consumerDetails);
-            consumerEntity.PasswordHash = HashPassword(consumerDetails.Password);
+            if(consumerDetails.Password!=null)
+            consumerEntity.PasswordHash = _passwordHelper.HashPassword(consumerDetails.Password);
 
             var addedConsumer = await _consumerRepository.AddConsumer(consumerEntity);
-
-            return _mapper.Map<ConsumerDto>(addedConsumer);
+            var consumerDto=_mapper.Map<ConsumerDto>(addedConsumer);
+            return new LoginResponse
+            {
+                token = await GenerateToken(consumerDto.ConsumerId),
+                Consumer = consumerDto
+            };
 
         }
 
-        private string HashPassword(string password)
-        {
-            using var sha256 = System.Security.Cryptography.SHA256.Create();
-            var bytes = System.Text.Encoding.UTF8.GetBytes(password);
-            var hash = sha256.ComputeHash(bytes);
-            return Convert.ToBase64String(hash);
-        }
-        public async Task<ConsumerDto?> ConsumerLogin(string email, string password)
-        {
-            var consumer = await _consumerRepository.ConsumerLogin(email, password);
-            if (consumer == null)
-                return null;
 
-            return _mapper.Map<ConsumerDto>(consumer);
+
+        public async Task<LoginResponse> Login(string email, string password)
+        {
+
+            var user = await _consumerRepository.GetConsumerByEmail(email);
+            if (user == null || !_passwordHelper.VerifyPassword(password, user.PasswordHash)) { return null; }
+
+           
+
+            var consumerDto = _mapper.Map<ConsumerDto>(user);
+
+            return new LoginResponse
+            {
+                token = await GenerateToken(consumerDto.ConsumerId),
+                Consumer = consumerDto,
+            };
+
         }
 
         public async Task<ConsumerDto?> UpdateConsumer(int consumerId, ConsumerDto consumerDetails)
@@ -86,32 +104,95 @@ namespace CouponShop.BLL.Services
             if (consumer == null) return false;
 
             // בדיקת סיסמה נוכחית
-            var currentHash = HashPassword(currentPassword);
-            if (consumer.PasswordHash != currentHash)
+           
+            if (_passwordHelper.VerifyPassword(currentPassword, consumer.PasswordHash))
                 throw new Exception("Current password is incorrect.");
 
-            var newHash = HashPassword(newPassword);
+            var newHash = _passwordHelper.HashPassword(newPassword);
             await _consumerRepository.UpdatePassword(consumer, newHash);
 
             return true;
         }
-
-        public async Task<string> GenerateJwtToken(int consumerId)
+        public async Task<string> GenerateToken(int consumerId)
         {
             var consumer = await _consumerRepository.GetConsumerById(consumerId);
+            if (consumer == null)
+                throw new Exception("Consumer not found");
+
             var tokenHandler = new JwtSecurityTokenHandler();
-            var key = Encoding.ASCII.GetBytes("CouponShopSecretKey2025ByChaniDrachman854"); // מפתח סודי, שמור ב-appsettings
+            var key = Encoding.ASCII.GetBytes("CouponShopSecretKey2025ByChaniDrachman854");
+
+            
+            var claims = new List<Claim>
+             {
+               new Claim(ClaimTypes.NameIdentifier, consumerId.ToString()),
+               new Claim(ClaimTypes.Role, consumer.Role)
+             };
+
+            var business = await _businessRepository.GetBusinessByConsumerId(consumerId);
+
+            if (business != null)
+            {
+                claims.Add(new Claim("BusinessId", business.BusinessId.ToString()));
+            }
+
             var tokenDescriptor = new SecurityTokenDescriptor
             {
-                Subject = new ClaimsIdentity(new[] { new Claim("ConsumerId", consumerId.ToString()), new Claim(ClaimTypes.Role, consumer.Role) }),
-                Expires = DateTime.UtcNow.AddHours(2), // זמן תפוגה של 2 שעות
-                Issuer = "CouponShopAPI", // צריך להתאים למה שהגדרת ב-Program.cs
+                Subject = new ClaimsIdentity(claims),
+                Expires = DateTime.UtcNow.AddHours(2),
+                Issuer = "CouponShopAPI",
                 Audience = "CouponShopUsers",
-                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
+                SigningCredentials = new SigningCredentials(
+                    new SymmetricSecurityKey(key),
+                    SecurityAlgorithms.HmacSha256Signature)
             };
+
             var token = tokenHandler.CreateToken(tokenDescriptor);
             return tokenHandler.WriteToken(token);
         }
+
+        public async Task<LoginResponse> CreatePassword(CreatePasswordDto dto)
+        {
+            if (string.IsNullOrWhiteSpace(dto.Token))
+                throw new ArgumentException("Token is required");
+
+            if (string.IsNullOrWhiteSpace(dto.NewPassword))
+                throw new ArgumentException("Password is required");
+
+            // 1. Hash the incoming token
+            var hashedToken = Convert.ToBase64String(SHA256.HashData(Encoding.UTF8.GetBytes(dto.Token)));
+            
+            // 2. Find consumer
+            var consumer = await _consumerRepository.GetByResetToken(hashedToken);
+            if (consumer == null)
+                throw new KeyNotFoundException("Invalid token");
+
+            // 3. Check expiry
+            if (consumer.ResetPasswordExpiry == null ||
+                consumer.ResetPasswordExpiry < DateTime.UtcNow)
+                throw new UnauthorizedAccessException("Token has expired");
+
+           
+            if (dto.NewPassword.Length < 6)
+                throw new ArgumentException("Password must be at least 6 characters");
+
+    
+            consumer.PasswordHash = _passwordHelper.HashPassword(dto.NewPassword);
+
+            // Clear reset token
+            consumer.ResetPasswordToken = null;
+            consumer.ResetPasswordExpiry = null;
+
+            // Update DB
+            await _consumerRepository.UpdateAsync(consumer);
+
+
+            return new LoginResponse {
+                Consumer = _mapper.Map<ConsumerDto>(consumer),
+                token = await GenerateToken(consumer.ConsumerId) };
+           
+        }
+
 
 
 

@@ -1,4 +1,5 @@
 ﻿using CouponShop.DAL.Entities;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,6 +17,10 @@ namespace CouponShop.DAL.Interfaces
         public Task<Consumer?> GetConsumerById(int consumerId);
 
         public Task<Consumer> UpdatePassword(Consumer consumer, string newPasswordHash);
+        public Task<Consumer?> GetByResetToken(string hashedToken);
+        public Task UpdateAsync(Consumer consumer);
+
+
 
 
     }

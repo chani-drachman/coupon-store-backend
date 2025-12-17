@@ -15,3 +15,4 @@ C:\Users\chani\Desktop\proramming\.NET\CouponShop\CouponShop.BLL\obj\Debug\net9.
 C:\Users\chani\Desktop\proramming\.NET\CouponShop\CouponShop.BLL\obj\Debug\net9.0\ref\CouponShop.BLL.dll
 C:\Users\chani\Desktop\proramming\.NET\CouponShop\CouponShop.BLL\bin\Debug\net9.0\CouponShop.DTO.dll
 C:\Users\chani\Desktop\proramming\.NET\CouponShop\CouponShop.BLL\bin\Debug\net9.0\CouponShop.DTO.pdb
+C:\Users\chani\Desktop\proramming\.NET\CouponShop\CouponShop.BLL\obj\Debug\net9.0\CouponShop.BLL.sourcelink.json

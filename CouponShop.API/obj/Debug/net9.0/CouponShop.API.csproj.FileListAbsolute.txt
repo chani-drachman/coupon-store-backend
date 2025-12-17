@@ -173,3 +173,4 @@ C:\Users\chani\Desktop\proramming\.NET\CouponShop\CouponShop.API\bin\Debug\net9.
 C:\Users\chani\Desktop\proramming\.NET\CouponShop\CouponShop.API\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\chani\Desktop\proramming\.NET\CouponShop\CouponShop.API\bin\Debug\net9.0\CouponShop.API.staticwebassets.runtime.json
 C:\Users\chani\Desktop\proramming\.NET\CouponShop\CouponShop.API\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\chani\Desktop\proramming\.NET\CouponShop\CouponShop.API\obj\Debug\net9.0\CouponShop.API.sourcelink.json

@@ -24,14 +24,14 @@ namespace CouponShop.API.Controllers
 
         //api/consumers
         [HttpPost]
-        public async Task<ActionResult<ConsumerDto>> AddConsumer([FromBody] ConsumerRequest consumerDetails)
+        public async Task<ActionResult<LoginResponse>> AddConsumer([FromBody] ConsumerRequest consumerDetails)
         {
             try
             {
                 var consumer = _mapper.Map<ConsumerDto>(consumerDetails);
                 
-                var addedConsumer= await _consumerService.AddConsumer(consumer);
-                return Ok(addedConsumer);
+                var response= await _consumerService.AddConsumer(consumer);
+                return Ok(response);
 
             }
             catch (Exception ex)
@@ -41,22 +41,22 @@ namespace CouponShop.API.Controllers
 
 
         }
-        //api/consumer/login
+ 
+        //api/user/login
         [HttpPost("login")]
-        public async Task<ActionResult<ConsumerDto>> ConsumerLogin([FromBody] LoginRequest loginRequest)
+        public async Task<ActionResult<LoginResponse>> Login([FromBody]LoginRequest request)
         {
+            if (request.email == null || request.password == null) return BadRequest("לא הוזנו שם משתמש/סיסמה");
             try
             {
-                var consumer = await _consumerService.ConsumerLogin(loginRequest.email, loginRequest.password);
-                if (consumer == null)
-                    return Unauthorized(new { Message = "Invalid email or password." });
-
-                var token = await _consumerService.GenerateJwtToken(consumer.ConsumerId);
-                return Ok(new LoginResponse { Token = token, Consumer = consumer });
+                var response = await _consumerService.Login(request.email, request.password);
+                if (response == null)
+                    return Unauthorized("שם משתמש או סיסמה שגויים");
+                return Ok(response);
             }
             catch (Exception ex)
             {
-                return StatusCode(500, new { Message = ex.Message });
+                return StatusCode(500, $"An error occurred while login to your account: {ex.Message}");
             }
         }
 
@@ -72,7 +72,7 @@ namespace CouponShop.API.Controllers
                         return BadRequest("Consumer details are required.");
 
                 // שליפת ה-ID מתוך הטוקן
-                var consumerIdClaim = User.FindFirst("ConsumerId");
+                var consumerIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
                     if (consumerIdClaim == null)
                         return Unauthorized(new { Message = "Invalid token." });
 
@@ -102,7 +102,7 @@ namespace CouponShop.API.Controllers
             try
             {
                 // שליפת ה-ID מתוך הטוקן
-                var consumerIdClaim = User.FindFirst("ConsumerId");
+                var consumerIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
                 if (consumerIdClaim == null)
                     return Unauthorized(new { Message = "Invalid token." });
 
@@ -120,5 +120,32 @@ namespace CouponShop.API.Controllers
             }
         }
 
+        [HttpPost("create-password")]
+        public async Task<ActionResult<LoginResponse>> CreatePassword([FromBody] CreatePasswordDto dto)
+        {
+            try
+            {
+               var response= await _consumerService.CreatePassword(dto);
+                return Ok(response);
+            }
+            catch (ArgumentException ex)
+            {
+                return BadRequest(new ErrorResponseDto("Invalid input", ex.Message));
+            }
+            catch (KeyNotFoundException ex)
+            {
+                return NotFound(new ErrorResponseDto("Invalid token", ex.Message));
+            }
+            catch (UnauthorizedAccessException ex)
+            {
+                return StatusCode(401, new ErrorResponseDto("Expired token", ex.Message));
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new ErrorResponseDto("Server error", ex.Message));
+            }
+        }
     }
+
 }
+

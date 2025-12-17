@@ -40,6 +40,10 @@ public partial class CouponShopContext : DbContext
             entity.Property(e => e.Email).HasMaxLength(200);
             entity.Property(e => e.Name).HasMaxLength(200);
             entity.Property(e => e.Phone).HasMaxLength(20);
+
+            entity.HasOne(d => d.Consumer).WithMany(p => p.Businesses)
+                .HasForeignKey(d => d.ConsumerId)
+                .HasConstraintName("FK_Business_Consumer");
         });
 
         modelBuilder.Entity<Category>(entity =>
@@ -66,8 +70,11 @@ public partial class CouponShopContext : DbContext
                 .HasColumnType("datetime");
             entity.Property(e => e.Email).HasMaxLength(200);
             entity.Property(e => e.Name).HasMaxLength(200);
-            entity.Property(e => e.PasswordHash).HasMaxLength(500);
+            entity.Property(e => e.PasswordHash).HasMaxLength(255);
             entity.Property(e => e.Phone).HasMaxLength(20);
+            entity.Property(e => e.Role)
+                .HasMaxLength(50)
+                .HasDefaultValue("User");
         });
 
         modelBuilder.Entity<CouponCode>(entity =>
@@ -86,6 +93,32 @@ public partial class CouponShopContext : DbContext
                 .HasForeignKey(d => d.OrderItemId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_CouponCode_OrderItem");
+        });
+
+        modelBuilder.Entity<CouponRequest>(entity =>
+        {
+            entity.HasKey(e => e.RequestId).HasName("PK__CouponRe__33A8517AC27E7047");
+
+            entity.Property(e => e.BusinessAddress).HasMaxLength(300);
+            entity.Property(e => e.BusinessEmail).HasMaxLength(255);
+            entity.Property(e => e.BusinessName).HasMaxLength(255);
+            entity.Property(e => e.BusinessPhone).HasMaxLength(50);
+            entity.Property(e => e.ConditionText).HasMaxLength(255);
+            entity.Property(e => e.CouponTitle).HasMaxLength(255);
+            entity.Property(e => e.CreatedAt)
+                .HasDefaultValueSql("(getdate())")
+                .HasColumnType("datetime");
+            entity.Property(e => e.DiscountType).HasMaxLength(50);
+            entity.Property(e => e.DiscountValue).HasColumnType("decimal(10, 2)");
+            entity.Property(e => e.PrivateName).HasMaxLength(255);
+            entity.Property(e => e.Status)
+                .HasMaxLength(50)
+                .HasDefaultValue("Pending");
+
+            entity.HasOne(d => d.Category).WithMany(p => p.CouponRequests)
+                .HasForeignKey(d => d.CategoryId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_CouponRequests_Category");
         });
 
         modelBuilder.Entity<Order>(entity =>
@@ -152,30 +185,6 @@ public partial class CouponShopContext : DbContext
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_Product_Category");
         });
-
-        modelBuilder.Entity<CouponRequest>(entity =>
-        {
-            entity.HasKey(e => e.RequestId).HasName("PK__CouponRequest__RequestId");
-            entity.ToTable("CouponRequests");
-
-            entity.Property(e => e.BusinessName).HasMaxLength(200);
-            entity.Property(e => e.BusinessEmail).HasMaxLength(200);
-            entity.Property(e => e.BusinessPhone).HasMaxLength(20);
-            entity.Property(e => e.CouponTitle).HasMaxLength(200);
-            entity.Property(e => e.CouponDescription).HasMaxLength(500);
-            entity.Property(e => e.DiscountType).HasMaxLength(50);
-            entity.Property(e => e.ConditionText).HasMaxLength(500);
-            entity.Property(e => e.Status).HasMaxLength(50);
-            entity.Property(e => e.CreatedAt)
-                .HasDefaultValueSql("(getdate())")
-                .HasColumnType("datetime");
-            entity.HasOne(d => d.Category)
-        .WithMany() 
-        .HasForeignKey(d => d.CategoryId)
-        .OnDelete(DeleteBehavior.SetNull) 
-        .HasConstraintName("FK_CouponRequests_Categories");
-        });
-
 
         OnModelCreatingPartial(modelBuilder);
     }

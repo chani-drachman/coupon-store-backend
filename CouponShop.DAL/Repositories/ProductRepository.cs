@@ -30,6 +30,20 @@ namespace CouponShop.DAL.Repositories
                 throw new Exception("An error occured while retrieving products", ex);
             }
         }
+        public async Task<List<Product>> GetActiveCoupons(){
+            try
+            {
+                return await _context.Products.Where(c => c.IsActive == true)
+                        .Include(c => c.Business)
+                        .ToListAsync();
+
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("An error occured while retrieving products", ex);
+            }
+        }
+
         public async Task<Product> GetProductById(int id)
         {
             try
@@ -147,6 +161,16 @@ namespace CouponShop.DAL.Repositories
                 throw new Exception("An unexpected error occurred while updating the coupon.", ex);
             }
         }
+        public async Task<Product> ToggleCouponActive(int id)
+        {
+            var coupon = await _context.Products.FindAsync(id);
+            if (coupon == null)
+                throw new ArgumentNullException("coupon was not found");
+            coupon.IsActive = !coupon.IsActive;
+            await _context.SaveChangesAsync();
+            return coupon;
+        }
+            
 
 
 

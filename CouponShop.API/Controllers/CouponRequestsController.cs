@@ -33,15 +33,16 @@ namespace CouponShop.API.Controllers
         }
 
         [HttpPost]
-        public async Task<CouponRequestDto> AddCouponRequest(AddCouponRequest request)
+        public async Task<ActionResult<CouponRequestDto>> AddCouponRequest([FromBody] AddCouponRequest request)
         {
             try
             {
-               var requestDetails= _mapper.Map<CouponRequestDto>(request);
-                return await _couponRequestService.AddCouponRequest(requestDetails);
+               var requestDetails= _mapper.Map<AddCouponRequestDto>(request);
+                var result= await _couponRequestService.AddCouponRequest(requestDetails);
+                return Ok(result);
             }
             catch (Exception ex)
-            { throw new Exception("failed to add coupon request", ex); }
+            { return StatusCode(500, new { Message = "Failed to add coupon request.", Detail = ex.Message }); }
         }
 
         [Authorize(Roles = "Admin")]
@@ -55,12 +56,16 @@ namespace CouponShop.API.Controllers
                 {
                     Message = "Coupon request approved",
                     ProductId = product.ProductId,
-                    ProductName = product.Description
+                         ProductName = product.Description
                 });
             }
             catch (Exception ex)
             {
-                return StatusCode(500, ex.Message);
+                if (ex.Message.Contains("המייל כבר קיים במערכת"))
+                {
+                    return BadRequest(new { error = ex.Message });
+                }
+                return StatusCode(500, new { error = "שגיאה פנימית בשרת", details = ex.Message });
             }
         }
     }

@@ -37,7 +37,7 @@ namespace CouponShop.DAL.Repositories
         {
             try
             {
-                _context.CouponRequests.Add(request);
+                await _context.CouponRequests.AddAsync(request);
                 await _context.SaveChangesAsync();
                 return request;
             }
@@ -56,58 +56,7 @@ namespace CouponShop.DAL.Repositories
             await _context.SaveChangesAsync();
         }
 
-        public async Task<Product> AddBusinessAndCoupon(CouponRequest request)
-        {
-            using var transaction = await _context.Database.BeginTransactionAsync();
-            try
-            {
-                // בודקים אם העסק כבר קיים
-                var existingBusiness = await _context.Businesses
-                    .FirstOrDefaultAsync(b =>
-                        b.Name == request.BusinessName &&
-                        b.Email == request.BusinessEmail);
 
-                Business business;
-                if (existingBusiness != null)
-                {
-                    business = existingBusiness;
-                }
-                else
-                {
-                    // מוסיפים עסק חדש
-                    business = new Business
-                    {
-                        Name = request.BusinessName,
-                        Email = request.BusinessEmail,
-                        Phone = request.BusinessPhone
-                    };
-                    await _context.Businesses.AddAsync(business);
-                    await _context.SaveChangesAsync();
-                }
-
-                // מוסיפים את הקופון (Product) ומקשרים לעסק
-                var product = new Product
-                {
-                    Description = request.CouponTitle,
-                    Details = request.CouponDescription,
-                    Price = 20,
-                    IsActive = true,
-                    BusinessId = business.BusinessId,
-                    CategoryId = request.CategoryId ?? 17
-
-                };
-                await _context.Products.AddAsync(product);
-                await _context.SaveChangesAsync();
-
-                await transaction.CommitAsync();
-                return product;
-            }
-            catch
-            {
-                await transaction.RollbackAsync();
-                throw;
-            }
-        }
 
     }
 }

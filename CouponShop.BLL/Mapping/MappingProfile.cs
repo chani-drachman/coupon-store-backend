@@ -15,7 +15,7 @@ namespace CouponShop.BLL.Mapping
         {
             CreateMap<Product, ProductDto>().ReverseMap();
             CreateMap<Business, BusinessDto>().ReverseMap();
-            CreateMap<Consumer, ConsumerDto>().ReverseMap();
+            CreateMap<ConsumerDto, Consumer>().ForMember(dest => dest.PasswordHash, opt => opt.Ignore()).ReverseMap();
             CreateMap<CategoryDto, Category>().ReverseMap();
 
             CreateMap<OrderItem, OrderItemDto>()

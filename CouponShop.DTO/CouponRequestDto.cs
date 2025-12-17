@@ -8,10 +8,13 @@ namespace CouponShop.DTO
 {
     public class CouponRequestDto
     {
+        public string PrivateName { get; set; } 
         public int RequestId { get; set; }
         public string BusinessName { get; set; }
         public string BusinessEmail { get; set; }
         public string BusinessPhone { get; set; }
+        public string BusinessAddress { get; set; }
+
         public string CouponTitle { get; set; }
         public string? CouponDescription { get; set; }
         public string DiscountType { get; set; }
@@ -20,7 +23,7 @@ namespace CouponShop.DTO
         public DateTime? ExpirationDate { get; set; }
         public string? Status { get; set; }
         public DateTime? CreatedAt { get; set; }
-        public int? CategoryId { get; set; }
+        public int CategoryId { get; set; }
 
     }
 }

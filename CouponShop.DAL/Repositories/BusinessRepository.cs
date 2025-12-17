@@ -89,5 +89,10 @@ namespace CouponShop.DAL.Repositories
                 throw new Exception("An unexpected error occurred while updating the business.", ex);
             }
         }
+        public async Task<Business?> GetBusinessByConsumerId(int consumerId)
+        {
+            return await _context.Businesses
+                .FirstOrDefaultAsync(b => b.ConsumerId == consumerId);
+        }
     }
 }

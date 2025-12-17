@@ -11,5 +11,7 @@ public partial class Category
 
     public string? Description { get; set; }
 
+    public virtual ICollection<CouponRequest> CouponRequests { get; set; } = new List<CouponRequest>();
+
     public virtual ICollection<Product> Products { get; set; } = new List<Product>();
 }

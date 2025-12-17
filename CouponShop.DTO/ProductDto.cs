@@ -22,7 +22,7 @@ namespace CouponShop.DTO
 
         public string? ImageUrl { get; set; }
 
-        public DateOnly? ExpirationDate { get; set; }
+        public DateTime? ExpirationDate { get; set; }
 
         public bool? IsActive { get; set; }
 

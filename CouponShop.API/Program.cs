@@ -11,6 +11,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Microsoft.OpenApi.Models;
+using Microsoft.AspNetCore.Identity;
+using CouponShop.BLL.Helpers;
+using CouponShop.BLL.Infrastructures;
 
 namespace CouponShop.API
 {
@@ -40,6 +43,10 @@ namespace CouponShop.API
             builder.Services.AddScoped<IOrderService, OrderService>();
             builder.Services.AddScoped<ICouponRequestRepository, CouponRequestRepository>();
             builder.Services.AddScoped<ICouponRequestService, CouponRequestService>();
+            builder.Services.AddScoped<ICouponCodeService, CouponCodeService>();
+            builder.Services.AddScoped<ICouponCodeRepository, CouponCodeRepository>();
+            builder.Services.AddScoped<IPasswordHelper, PasswordHelper>();
+            builder.Services.AddScoped<IEmailService, EmailService>();
 
 
 

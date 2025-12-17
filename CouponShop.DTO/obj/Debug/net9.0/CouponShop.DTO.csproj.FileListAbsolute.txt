@@ -10,3 +10,4 @@ C:\Users\chani\Desktop\proramming\.NET\CouponShop\CouponShop.DTO\obj\Debug\net9.
 C:\Users\chani\Desktop\proramming\.NET\CouponShop\CouponShop.DTO\obj\Debug\net9.0\CouponShop.DTO.pdb
 C:\Users\chani\Desktop\proramming\.NET\CouponShop\CouponShop.DTO\obj\Debug\net9.0\ref\CouponShop.DTO.dll
 C:\Users\chani\Desktop\proramming\.NET\CouponShop\CouponShop.DTO\obj\Debug\net9.0\CouponShop.DTO.csproj.AssemblyReference.cache
+C:\Users\chani\Desktop\proramming\.NET\CouponShop\CouponShop.DTO\obj\Debug\net9.0\CouponShop.DTO.sourcelink.json

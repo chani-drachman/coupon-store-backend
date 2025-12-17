@@ -5,6 +5,7 @@ using CouponShop.DTO;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace CouponShop.API.Controllers
 {
@@ -29,7 +30,7 @@ namespace CouponShop.API.Controllers
             try
             {
                 // שליפת ה-ID של המשתמש מתוך ה-Token
-                var consumerIdClaim = User.FindFirst("ConsumerId");
+                var consumerIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
                 if (consumerIdClaim == null)
                     return Unauthorized(new { Message = "המשתמש אינו מחובר, אנא התחבר או צור חשבון חדש." });
 
@@ -52,7 +53,7 @@ namespace CouponShop.API.Controllers
             try
             {
                 //שליפת ID מהטוקן של המשתמש
-                var consumerIdClaim = User.FindFirst("ConsumerId");
+                var consumerIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
                 if (consumerIdClaim == null)
                     return Unauthorized(new { Message = "המשתמש אינו מחובר, אנא התחבר או צור חשבון חדש." });
 
@@ -81,7 +82,7 @@ namespace CouponShop.API.Controllers
             try
             {
                 // שליפת ה-ID של המשתמש מתוך הטוקן (למקרה שצריך לבדוק בעלות ההזמנה)
-                var consumerIdClaim = User.FindFirst("ConsumerId");
+                var consumerIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
                 if (consumerIdClaim == null)
                     return Unauthorized(new { Message = "המשתמש אינו מחובר, אנא התחבר או צור חשבון חדש." });
 

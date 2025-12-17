@@ -10,11 +10,13 @@ namespace CouponShop.DAL.Interfaces
     public interface IProductRepository
     {
         public Task<List<Product>> GetAllProducts();
+        public Task<List<Product>> GetActiveCoupons();
         public Task<Product> GetProductById(int id);
         public Task<Product> AddCoupon(Product coupon);
         public Task<bool> DeleteProduct(int id);
         public Task<List<Product>> GetProductsByCategory(int categoryId);
         public Task<Product?> UpdateCoupon(int productId, Product updatedCoupon);
+        public Task<Product> ToggleCouponActive(int id);
 
 
     }

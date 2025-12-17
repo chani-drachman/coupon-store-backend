@@ -15,5 +15,9 @@ public partial class Business
 
     public string? Address { get; set; }
 
+    public int? ConsumerId { get; set; }
+
+    public virtual Consumer? Consumer { get; set; }
+
     public virtual ICollection<Product> Products { get; set; } = new List<Product>();
 }

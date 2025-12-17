@@ -17,11 +17,13 @@ namespace CouponShop.BLL.Services
     {
         private readonly IProductRepository _productRepository;
         private readonly IBusinessRepository _businessRepository;
+        private readonly IConsumerService _consumerService;
         private readonly IMapper _mapper;
-        public ProductService(IProductRepository productRepository,IBusinessRepository businessRepository, IMapper mapper)
+        public ProductService(IProductRepository productRepository,IBusinessRepository businessRepository,IConsumerService consumerService, IMapper mapper)
         {
             _productRepository = productRepository;
             _businessRepository=businessRepository;
+            _consumerService = consumerService;
             _mapper = mapper;
         }
 
@@ -38,6 +40,11 @@ namespace CouponShop.BLL.Services
                 throw new Exception("An error occured while retrieving products", ex);
             }
         }
+        public async Task<List<ProductDto>> GetActiveCoupons(){
+            var products = await _productRepository.GetActiveCoupons();
+            return _mapper.Map<List<ProductDto>>(products);
+        }
+
 
         public async Task<ProductDto> GetProductById(int id)
         {
@@ -58,6 +65,17 @@ namespace CouponShop.BLL.Services
             }
             else
             {
+                var consumerDto = new ConsumerDto
+                {
+                    Name = business.Name,
+                    Phone = business.Phone,
+                    Email = business.Email,
+                    Password = business.Password,
+                    Role = "Business"
+                };
+
+                
+                var newConsumer = await _consumerService.AddConsumer(consumerDto);
                 var newBusiness = _mapper.Map<Business>(business);
                 businessEntity = await _businessRepository.AddBusiness(newBusiness);
             }
@@ -122,6 +140,11 @@ namespace CouponShop.BLL.Services
                 throw new Exception($"An error occurred while updating the coupon with ID {productId}.", ex);
             }
         }
+        public async Task<ProductDto> ToggleCouponActive(int productId){
+           var coupon= await _productRepository.ToggleCouponActive(productId);
+            return _mapper.Map<ProductDto>(coupon);
+        }
+
 
 
 

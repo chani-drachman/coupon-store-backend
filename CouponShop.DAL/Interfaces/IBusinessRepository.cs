@@ -14,6 +14,7 @@ namespace CouponShop.DAL.Interfaces
 
         public Task<List<Business>> GetAllBusiness();
         public Task<Business?> UpdateBusiness(int businessId, Business updatedBusiness);
+        public Task<Business?> GetBusinessByConsumerId(int consumerId);
 
     }
 }

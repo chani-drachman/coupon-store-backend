@@ -15,11 +15,15 @@ public partial class Consumer
 
     public string? Email { get; set; }
 
-    public string PasswordHash { get; set; } = null!;
+    public string? PasswordHash { get; set; }
 
     public DateTime? CreatedAt { get; set; }
 
-    public string Role { get; set; } = "User";
+    public string Role { get; set; } = null!;
+    public string? ResetPasswordToken { get; set; }
+    public DateTime? ResetPasswordExpiry { get; set; }
+
+    public virtual ICollection<Business> Businesses { get; set; } = new List<Business>();
 
     public virtual ICollection<Order> Orders { get; set; } = new List<Order>();
 }

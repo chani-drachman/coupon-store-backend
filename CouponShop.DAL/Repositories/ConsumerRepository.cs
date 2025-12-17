@@ -22,6 +22,7 @@ namespace CouponShop.DAL.Repositories
         {
             return await _context.Consumers.FirstOrDefaultAsync(c => c.Email == email);
         }
+
         public async Task<Consumer> AddConsumer(Consumer consumer){
             if (consumer == null)
                 throw new ArgumentNullException(nameof(consumer), "consumer cannot be null");
@@ -111,6 +112,19 @@ namespace CouponShop.DAL.Repositories
             await _context.SaveChangesAsync();
             return consumer;
         }
+
+        public async Task<Consumer?> GetByResetToken(string hashedToken)
+        {
+            return await _context.Consumers
+                .FirstOrDefaultAsync(c => c.ResetPasswordToken == hashedToken);
+        }
+
+        public async Task UpdateAsync(Consumer consumer)
+        {
+            _context.Consumers.Update(consumer);
+            await _context.SaveChangesAsync();
+        }
+
 
     }
 }

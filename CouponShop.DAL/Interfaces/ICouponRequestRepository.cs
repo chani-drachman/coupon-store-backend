@@ -13,6 +13,6 @@ namespace CouponShop.DAL.Interfaces
         public Task<CouponRequest> AddCouponRequest(CouponRequest request);
         public Task<CouponRequest?> GetCouponRequestById(int id);
         public Task UpdateAsync(CouponRequest request);
-        public Task<Product> AddBusinessAndCoupon(CouponRequest request);
+        
     }
 }

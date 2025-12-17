@@ -12,3 +12,4 @@ C:\Users\chani\Desktop\proramming\.NET\CouponShop\CouponShop.DAL\obj\Debug\net9.
 C:\Users\chani\Desktop\proramming\.NET\CouponShop\CouponShop.DAL\obj\Debug\net9.0\CouponShop.DAL.pdb
 C:\Users\chani\Desktop\proramming\.NET\CouponShop\CouponShop.DAL\obj\Debug\net9.0\CouponShop.DAL.genruntimeconfig.cache
 C:\Users\chani\Desktop\proramming\.NET\CouponShop\CouponShop.DAL\obj\Debug\net9.0\ref\CouponShop.DAL.dll
+C:\Users\chani\Desktop\proramming\.NET\CouponShop\CouponShop.DAL\obj\Debug\net9.0\CouponShop.DAL.sourcelink.json

@@ -17,7 +17,7 @@ namespace CouponShop.API.Mapping
             CreateMap<OrderItemRequest, OrderItemDto>()
       .ForMember(dest => dest.CouponCodes, opt => opt.Ignore()); // הקופונים נוצרו אוטומטית ב-Service
             CreateMap<OrderRequest, OrderDto>();
-            CreateMap<AddCouponRequest, CouponRequestDto>();
+            CreateMap<AddCouponRequest, AddCouponRequestDto>();
 
 
         }
